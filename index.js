@@ -56,13 +56,13 @@ async function run() {
             const updateDoc = {
               $set: {
               fullName:update.fullName,
-              classDevision:update.classDevision,
-              rollNumber:update.rollNumber,
-              addressLine1:update.addressLine1,
-              addressLine2:update.addressLine2,
-              landmark:update.landmark,
-              city:update.city,
-              pincode:update.pincode
+              classDevision:update.classDivision,
+              rollNumber:update.roll,
+              addressLine1:update.add1,
+              addressLine2:update.add2,
+              landmark:update.lndMrk,
+              city:update.cty,
+              pincode:update.pin
               },
             };
             const result = await studentCollection.updateOne(
